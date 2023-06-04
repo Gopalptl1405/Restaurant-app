@@ -1,0 +1,87 @@
+header{
+    background-color: rgb(238, 243, 243);
+    /* position: fixed; */
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+.Restaurant{
+    /* border: 1px solid black; */
+    padding: 5px;
+    /* position: fixed; */
+    margin-left: 10px;
+}
+main{
+    margin-top: 55px;
+}
+h2{
+    font-weight: 900;
+    font-size: 25px;
+    /* margin: 5px; */
+}
+.menu-list{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+    list-style-type: none;
+    
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    left: -50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* border: 2px solid black; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+
+li > img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+li > img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.item-name{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 5px;
+}
+.item-price{
+    font-weight: 900;
+    background-color: rgb(131, 131, 154);
+    width: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    margin-left: 5px;
+}
+.section-1, .section-2, .section-3{
+    /* margin-left: 10px; */
+    margin: 20px;
+}
+.section-2 > p{
+   padding: 10px;
+   font-size: 22px;
+   font-weight: 800;
+   color: green;
+}
+
+.section-3 > button{
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.section-3 > button:hover{
+    transform: scale(1.1);
+}
