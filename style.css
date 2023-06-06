@@ -14,16 +14,32 @@ header{
 }
 main{
     margin-top: 55px;
+    background-image: url(https://source.unsplash.com/random/1920x1080/?food);
+    background-blend-mode: multiply;
+    background-color: rgba(55, 44, 44, 0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h2{
     font-weight: 900;
     font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(131, 131, 154);
+    border-radius: 50%;
+    margin: 10px;
+    padding: 10px;
     /* margin: 5px; */
 }
 .menu-list{
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 10px;
+    /* width: 90%; */
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
     
 }
@@ -33,9 +49,9 @@ h2{
     padding: 10px;
     position: relative;
     left: -50px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    /* border: 2px solid black; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:3px 3px 10px 2px grey;
 }
 
 li > img{
@@ -52,13 +68,14 @@ li > img:hover{
     font-weight: 800;
     font-size: 18px;
     padding: 5px;
+    text-align: center;
 }
 .item-price{
     font-weight: 900;
     background-color: rgb(131, 131, 154);
-    width: 70px;
+    /* width: 70px; */
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
     padding: 5px;
     color: white;
@@ -71,8 +88,10 @@ li > img:hover{
 .section-2 > p{
    padding: 10px;
    font-size: 22px;
+   text-align: center;
    font-weight: 800;
-   color: green;
+   color: red;
+   
 }
 
 .section-3 > button{
@@ -81,6 +100,8 @@ li > img:hover{
     margin-top: 20px;
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    left: 43%
 }
 .section-3 > button:hover{
     transform: scale(1.1);

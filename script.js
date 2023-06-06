@@ -94,11 +94,12 @@ async function restaurantFlow(){
             }
             const order = await takeOrder();
              console.log(order);
+             orderStatusText.style.color = "white";
              orderStatusText.innerText = "Wait Sometime Your Order is Prepare....";
 
              const orderStatus = await orderPrep();
              console.log("Order Status :", orderStatus);
-             orderStatusText.innerText = "Your Order is Succesfully Prepared Please Make a Payment !.";
+             orderStatusText.innerText = "Your Order is Succesfully Prepared. Please Make a Payment !.";
         });
         // console.log(payBtn);
         payBtn.addEventListener("click", async()=>{
@@ -109,6 +110,7 @@ async function restaurantFlow(){
             }
             const paymentStatus = await payOrder();
             console.log("Payment Status : ", paymentStatus);
+            paymentStatusText.style.color = "white";
             paymentStatusText.textContent = "Payment Completed.";
             console.log("Thanyou For Eating my restaurant...");
             thankyouFun();
@@ -120,7 +122,12 @@ async function restaurantFlow(){
 };
 
 // calling my Main function();
-restaurantFlow();
+window.addEventListener("load", async ()=>{
+    setTimeout(()=>{
+        console.log("load restaurantFLow");
+        restaurantFlow();
+    }, 1000);
+});
 
  function thankyouFun(){
     alert("Thankyou For Eating !");
